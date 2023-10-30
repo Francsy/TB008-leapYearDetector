@@ -19,23 +19,6 @@ Si al menos una es verdadera, se imprimirá que es bisiesto
 
 
 
-
-
-
-// Duda: ¿Hay otra forma más sencilla de hacer que solo se metan variables numéricas? */
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Otra forma:
 
 let year = prompt("Introduce año")
@@ -78,11 +61,7 @@ if (year >= 0 || year <= 0) {
 
 /* Última opción vista
 
-function Bisiesto(year) {
+function bisiesto(year) {
     return year%100===0 ? year%400===0 : year%4=== 0;
 }
-if (Bisiesto(year)===true) {
-    console.log("El año " + year + " es bisiesto");
-} else {console.log("El año " + year + " es normalísimo");
-} */
-
+bisiesto(year) === true ? console.log("El año " + year + " es bisiesto") : console.log("El año " + year + " es normalísimo"); */
