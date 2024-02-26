@@ -1,37 +1,38 @@
-//Hacemos que la variable year sea designada a través del prompt
+//We make the variable 'year' assigned through the prompt
 
-let year = prompt("Introduce tu año favorito");
+let year = prompt("Introduce a year");
 
-//El primer if es para filtrar que sea un número:
+//The first if statement is to filter that it is a number:
 
 if (year >= 0 || year <= 0) {
     if ((year % 4 == 0 && year % 100 != 0) || (year % 4 == 0 && year % 400 == 0)) {
-        console.log(`Puedes estar seguro: el año ${year} es bisiest`)
+        console.log(`You can be sure: ${year} es a leap year`)
     } else {
-        console.log(`El ${year} es un año normalísimo`)
+        console.log(`${year} is a regular year`)
     }
-} else { console.log(`${year} no es un año`); }
+} else { console.log(`${year} is not a year`); }
 
-/* En el primer if ponemos una disyunción de dos proposiciones:
-- Que sea múltiplo de 4 mientras no sea de 100.
-- Que sea múltiplo de 4 y que también lo sea de 400.
-Si al menos una es verdadera, se imprimirá que es bisiesto
+/* In the first if statemet we use a disjunction of two propositions:
+- It is a multiple of 4 as long as it is not a multiple of 100.
+- It is a multiple of 4 and also a multiple of 400.
+If at least one of these is true, it will print that it is a leap year.
 
+*/
 
+/*
+Other way:
 
-/* Otra forma:
-
-let year = prompt("Introduce año")
+let year = prompt("Introduce year")
 
 while(year>=0 || year<=0){
         
     if ((year%4==0 && year%100!=0) || (year%4==0 && year%400==0)) {
-        console.log("Bisiesto");
+        console.log("Leap year");
         break;
     }
     
     if (year) {
-        console.log("no bisiesto")
+        console.log("Regular year")
         break;
     }
             
@@ -40,28 +41,28 @@ while(year>=0 || year<=0){
 
 
 
-/* Otra forma:
+/* Other way:
 
 if (year >= 0 || year <= 0) {
     switch (year) {
         case ((year%4==0 && year%100!=0) || (year%4==0 && year%400==0)):
-            console.log("Puedes estar seguro: es bisiesto");
+            console.log("You can be sure: It is a leap year");
             break;
         default:
-            console.log("Es un año normalísimo");
+            console.log("It is a regular year");
             break;
     }
 } else {
-    console.log("Eso no es un año");
+    console.log("It's not a year");
 } 
 */
 
 
 
 
-/* Última opción vista
+/* Other way:
 
 function bisiesto(year) {
     return year%100===0 ? year%400===0 : year%4=== 0;
 }
-bisiesto(year) === true ? console.log("El año " + year + " es bisiesto") : console.log("El año " + year + " es normalísimo"); */
+bisiesto(year) === true ? console.log("The " + year + " is a leap year") : console.log("The " + year + " is a regular year"); */

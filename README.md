@@ -3,3 +3,5 @@
 # Leap Year Detector #
 
 The Bridge Web Development Bootcamp Ramp-Up Exercise.
+
+The exercise is about to check whether a year is leap or not.
